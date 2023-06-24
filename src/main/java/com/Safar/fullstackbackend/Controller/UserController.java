@@ -49,7 +49,7 @@ public class UserController {
                     user.setUserPhone(newUser.getUserPhone());
                     user.setUserDestination(newUser.getUserDestination());
                     user.setUserCount(newUser.getUserCount());
-                    user.setUserArrivalDate(newUser.getUserArrivalDate());
+                    user.setuserName(newUser.getuserName());
                     user.setUserLeavingDate(newUser.getUserLeavingDate());
 
                     return userRepository.save(user);

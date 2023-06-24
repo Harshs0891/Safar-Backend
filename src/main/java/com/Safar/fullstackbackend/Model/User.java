@@ -17,7 +17,7 @@ public class User {
     private Long userPhone;
     private String userDestination;
     private Long userCount;
-    private String userArrivalDate;
+    private String userName;
     private String userLeavingDate;
 
 
@@ -45,11 +45,11 @@ public class User {
     public void setUserCount(Long userCount) {
         this.userCount = userCount;
     }
-    public String getUserArrivalDate() {
-        return userArrivalDate;
+    public String getuserName() {
+        return userName;
     }
-    public void setUserArrivalDate(String userArrivalDate) {
-        this.userArrivalDate = userArrivalDate;
+    public void setuserName(String userName) {
+        this.userName = userName;
     }
     public String getUserLeavingDate() {
         return userLeavingDate;
