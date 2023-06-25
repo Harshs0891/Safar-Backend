@@ -64,7 +64,7 @@ public class UserController {
 
         userRepository.deleteById(id);
 
-        return "User with id "+id+"has been deleted successfully";
+        return "Booking with id "+id+"has been deleted successfully";
     }
 
 
