@@ -8,8 +8,8 @@ import jakarta.persistence.Id;
 @Entity
 public class User {
 
-    @Id
-    @GeneratedValue
+    @Id //booking id
+    @GeneratedValue//will automatically generate unique id
     private Long id;
     private String address;
     private String name;

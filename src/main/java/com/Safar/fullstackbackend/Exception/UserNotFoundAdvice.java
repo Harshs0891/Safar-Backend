@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class UserNotFoundAdvice {
     
     @ResponseBody
-    @ExceptionHandler(UserNotFoundException.class)
-    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @ExceptionHandler(UserNotFoundException.class) //handle exception globally
+    @ResponseStatus(HttpStatus.NOT_FOUND) //to declare http status code
     public Map<String,String> exceptionHandler(UserNotFoundException exception){
         Map<String,String>errorMap=new HashMap<>();
         errorMap.put("errorMessage",exception.getMessage());
